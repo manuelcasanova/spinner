@@ -1,4 +1,5 @@
-let spinner = "| / - \\ | / - \\ |"
+// let spinner = "\r| \r/ \r- \r\\ \r| \r/ \r- \r\\"
+let spinner = "\r|\r/\r-\r\\\r|\r/\r-\r\\\r|"
 let delay = 0
 for (let i = 0; i < spinner.length; i++) {
   setTimeout(() => {
@@ -7,10 +8,9 @@ for (let i = 0; i < spinner.length; i++) {
   delay += 50
 }
 
+setTimeout(() => {
+  process.stdout.write("\n");
+}, delay);
 
 
-
-
-// setTimeout(() => {
-//   process.stdout.write('\r|   ');
-// }, 100);
+//let spinner = "| / - \\ | / - \\"
