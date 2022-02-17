@@ -41,3 +41,11 @@ setTimeout(() => {
   // Need to escape the backslash since it's a special character.
   process.stdout.write('\r\\   '); 
 }, 1800);
+
+setTimeout(() => {
+  process.stdout.write('\r|   ');
+}, 2100);
+
+setTimeout(() => {
+  process.stdout.write("\n");
+}, 2400);
